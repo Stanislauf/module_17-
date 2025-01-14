@@ -2,8 +2,8 @@ from fastapi import APIRouter, Depends, status, HTTPException
 from sqlalchemy.orm import Session
 from app.backend.db_depends import get_db
 from typing import Annotated, List
-from app.models import User as UserModel  # Импортируйте модель SQLAlchemy
-from app.schemas import CreateUser, UpdateUser, User  # Убедитесь, что User импортирован из схем
+from app.models import User as UserModel  
+from app.schemas import CreateUser, UpdateUser, User  
 from sqlalchemy import insert, select, update, delete
 from slugify import slugify
 import logging
